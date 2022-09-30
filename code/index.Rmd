@@ -28,6 +28,13 @@ The github repository for the docs: https://github.com/boyiechen/RDocument
 ## Usage {-}
 TBA
 
+### Set up on the server
+```{r, include=FALSE}
+# The working directory
+setwd("D://demand_info/documentation/code/")
+project_path <- "./../../code/"
+```
+
 ### Make benefits from Cross Reference {-}
 Click internal link to easily redirect to the page you would like to see. For example, please see Chapter \@ref(structure) to view the structure of the code
 

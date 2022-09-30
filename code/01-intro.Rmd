@@ -15,15 +15,108 @@ Codes are categorized in the following categories by their usage:
 
 The following sections display the tree diagrams of the scripts, and show the dependencies of each script. Note that a `.R` file indicates a single script, and some features may require more than one script to realize. 
 
+
+```{bash, eval=FALSE}
+D:.
+├───analysis
+├───create_data
+│   └───old
+├───drafts
+│   ├───figures
+│   │   ├───old
+│   │   ├───old - delete
+│   │   └───test
+│   └───tables
+│       ├───old
+│       ├───old - delete
+│       └───test
+├───knit_tables
+│   └───old
+└───Koijen Yogo
+    ├───Data
+    │   ├───Compustat
+    │   │   └───2017
+    │   ├───CRSP
+    │   │   └───2017
+    │   ├───Fama French
+    │   │   ├───Fama-French Factors
+    │   │   └───Industry Definitions
+    │   │       └───Stata
+    │   ├───SEC
+    │   │   └───Form ADV
+    │   │       └───Registered
+    │   │           └───Stata
+    │   ├───Thomson Reuters
+    │   │   ├───13F
+    │   │   │   ├───2016
+    │   │   │   └───2017
+    │   │   └───Ownership
+    │   │       └───2017
+    │   └───WRDS-SEC
+    └───Programs
+        ├───Data
+        │   ├───Compustat
+        │   │   └───2017
+        │   ├───CRSP
+        │   │   └───2017
+        │   ├───Fama French
+        │   │   ├───Fama-French Factors
+        │   │   └───Industry Definitions
+        │   │       └───Stata
+        │   ├───SEC
+        │   │   └───Form ADV
+        │   │       └───Registered
+        │   │           └───Stata
+        │   ├───Thomson Reuters
+        │   │   ├───13F
+        │   │   │   ├───2016
+        │   │   │   └───2017
+        │   │   └───Ownership
+        │   │       └───2017
+        │   └───WRDS-SEC
+        ├───Matlab
+        └───Stata
+            ├───Construction
+            │   └───Modified
+            ├───Data
+            │   ├───2
+            │   ├───3
+            │   ├───Bins_csv
+            │   └───Jin_0925
+            ├───Decomposition
+            ├───Estimation
+            ├───Institutions
+            ├───Liquidity
+            └───Predictability
+
+```
+
+
+
 ## Data Creation {-}
 
-TBA
+```{r}
+fs::dir_tree(paste0(project_path, "create_data"), 
+             recurse = TRUE, 
+             # regexp = "*.r"
+             )
+```
 
 ## Analysis {-}
-
+```{r}
+fs::dir_tree(paste0(project_path, "analysis"), 
+             recurse = TRUE, 
+             # regexp = "*.r"
+             )
+```
 TBA
 
 ## Knitting {-}
-
+```{r}
+fs::dir_tree(paste0(project_path, "knit_tables"), 
+             recurse = TRUE, 
+             # regexp = "*.r"
+             )
+```
 TBA
 
