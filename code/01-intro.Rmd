@@ -1,11 +1,29 @@
-# Hello bookdown 
+# The structure of the codes {#structure}
 
-All chapters start with a first-level heading followed by your chapter title, like the line above. There should be only one first-level heading (`#`) per .Rmd file.
+In this chapter, we list the structure of the code for the project.
+Codes are categorized in the following categories by their usage:
+1. data creation
+2. analysis
+  1. data cleaning/manipulation
+  2. data merge
+  3. estimations
+  4. counterfactual analysis
+3. table and figure knitting
+  1. summary statistics
+  2. regressions
+  3. histograms and other figures
 
-## A section
+The following sections display the tree diagrams of the scripts, and show the dependencies of each script. Note that a `.R` file indicates a single script, and some features may require more than one script to realize. 
 
-All chapter sections start with a second-level (`##`) or higher heading followed by your section title, like the sections above and below here. You can have as many as you want within a chapter.
+## Data Creation {-}
 
-### An unnumbered section {-}
+TBA
 
-Chapters and sections are numbered by default. To un-number a heading, add a `{.unnumbered}` or the shorter `{-}` at the end of the heading, like in this section.
+## Analysis {-}
+
+TBA
+
+## Knitting {-}
+
+TBA
+

@@ -14,27 +14,33 @@ link-citations: yes
 github-repo: boyiechen/RDocument
 ---
 
-# About
+# About {-}
 
-## About the demand project
+## About the demand project {-}
 
 The repository for Demand for Accounting Information (the project) is: 
 https://github.com/cgmcclure/value_info
 
-## About this documentation
+## About this documentation {-}
 The documentation for the demand project (the docs) is structured to describe the usage of codes for the project.
+The github repository for the docs: https://github.com/boyiechen/RDocument
 
-## Usage
+## Usage {-}
+TBA
 
-### How to add/edit the documentation
+### Make benefits from Cross Reference {-}
+Click internal link to easily redirect to the page you would like to see. For example, please see Chapter \@ref(structure) to view the structure of the code
+
+## How to add/edit the documentation {-}
 To Be Added
 
+### Render the docs {-}
 ```{r, eval=FALSE}
 bookdown::render_book(input = "index.Rmd", output_format = "bookdown::gitbook",
                       output_dir = "./../docs/")
 ```
 
-### Preview book
+### Preview book {-}
 
 As you work, you may start a local server to live preview this HTML book. This preview will update as you edit the book when you save individual .Rmd files. You can start the server in a work session by using the RStudio add-in "Preview book", or from the R console:
 
@@ -42,7 +48,7 @@ As you work, you may start a local server to live preview this HTML book. This p
 bookdown::serve_book()
 ```
 
-### Editing Reference
+### Editing Reference {-}
 ```{r include=FALSE}
 # automatically create a bib database for R packages
 knitr::write_bib(c(
@@ -50,14 +56,13 @@ knitr::write_bib(c(
 ), 'packages.bib')
 ```
 
-### Privacy and Sharing
+
+
+
+
+
+## Privacy and Sharing {-}
 
 The docs will **not** publish any code detail to the public since it is made for the people who work under the project.
 Some function names, code snippets, and relations between scripts may be shown in the docs, while **all full scripts should be displayed with links to the repository of the project** to keep the docs up to date and prevent from data leaking.
-
-
-
-
-
-
 
