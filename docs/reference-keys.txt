@@ -3,9 +3,13 @@ tab:nice-tab
 eq:binom
 thm:tri
 about
+about-the-demand-project
+about-this-documentation
 usage
-render-book
+how-to-addedit-the-documentation
 preview-book
+editing-reference
+privacy-and-sharing
 hello-bookdown
 a-section
 cross

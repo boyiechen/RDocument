@@ -1,50 +1,40 @@
 --- 
-title: "A Minimal Book Example"
-author: "John Doe"
+title: "Documentation for the Demand Project"
+author: "Boyie Chen"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: [book.bib, packages.bib]
+url: https://boyiechen.github.io/RDocument/
 # url: your book url like https://bookdown.org/yihui/bookdown
 # cover-image: path to the social sharing image like images/cover.jpg
 description: |
-  This is a minimal example of using the bookdown package to write a book.
-  The HTML output format for this example is bookdown::gitbook,
-  set in the _output.yml file.
+  This Rbook is created to document the code used in the project. They are categorized based on the purposes and usages. 
 link-citations: yes
-github-repo: rstudio/bookdown-demo
+github-repo: boyiechen/RDocument
 ---
 
 # About
 
-This is a _sample_ book written in **Markdown**. You can use anything that Pandoc's Markdown supports; for example, a math equation $a^2 + b^2 = c^2$.
+## About the demand project
 
-## Usage 
+The repository for Demand for Accounting Information (the project) is: 
+https://github.com/cgmcclure/value_info
 
-Each **bookdown** chapter is an .Rmd file, and each .Rmd file can contain one (and only one) chapter. A chapter *must* start with a first-level heading: `# A good chapter`, and can contain one (and only one) first-level heading.
+## About this documentation
+The documentation for the demand project (the docs) is structured to describe the usage of codes for the project.
 
-Use second-level and higher headings within chapters like: `## A short section` or `### An even shorter section`.
+## Usage
 
-The `index.Rmd` file is required, and is also your first book chapter. It will be the homepage when you render the book.
-
-## Render book
-
-You can render the HTML version of this example book without changing anything:
-
-1. Find the **Build** pane in the RStudio IDE, and
-
-1. Click on **Build Book**, then select your output format, or select "All formats" if you'd like to use multiple formats from the same book source files.
-
-Or build the book from the R console:
+### How to add/edit the documentation
+To Be Added
 
 ```{r, eval=FALSE}
 bookdown::render_book(input = "index.Rmd", output_format = "bookdown::gitbook",
                       output_dir = "./../docs/")
 ```
 
-To render this example to PDF as a `bookdown::pdf_book`, you'll need to install XeLaTeX. You are recommended to install TinyTeX (which includes XeLaTeX): <https://yihui.org/tinytex/>.
-
-## Preview book
+### Preview book
 
 As you work, you may start a local server to live preview this HTML book. This preview will update as you edit the book when you save individual .Rmd files. You can start the server in a work session by using the RStudio add-in "Preview book", or from the R console:
 
@@ -52,10 +42,22 @@ As you work, you may start a local server to live preview this HTML book. This p
 bookdown::serve_book()
 ```
 
-
+### Editing Reference
 ```{r include=FALSE}
 # automatically create a bib database for R packages
 knitr::write_bib(c(
   .packages(), 'bookdown', 'knitr', 'rmarkdown'
 ), 'packages.bib')
 ```
+
+### Privacy and Sharing
+
+The docs will **not** publish any code detail to the public since it is made for the people who work under the project.
+Some function names, code snippets, and relations between scripts may be shown in the docs, while **all full scripts should be displayed with links to the repository of the project** to keep the docs up to date and prevent from data leaking.
+
+
+
+
+
+
+
