@@ -30,7 +30,7 @@ Project Folder
 
 ## Data Creation {-}
 
-```{r, include = FALSE}
+```{r, echo=FALSE}
 fs::dir_tree(paste0(project_path, "create_data"), 
              recurse = TRUE, 
              regexp = "old",
@@ -39,7 +39,7 @@ fs::dir_tree(paste0(project_path, "create_data"),
 ```
 
 ## Analysis {-}
-```{r, include=FALSE}
+```{r, echo=FALSE}
 fs::dir_tree(paste0(project_path, "analysis"), 
              recurse = TRUE, 
              regexp = "old",
@@ -49,7 +49,7 @@ fs::dir_tree(paste0(project_path, "analysis"),
 TBA
 
 ## Knitting {-}
-```{r, include=FALSE}
+```{r, echo=FALSE}
 fs::dir_tree(paste0(project_path, "knit_tables"), 
              recurse = TRUE, 
              regexp = "old",
