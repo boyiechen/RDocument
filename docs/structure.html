@@ -210,172 +210,22 @@ Codes are categorized in the following categories by their usage:
 2. regressions
 3. histograms and other figures</p>
 <p>The following sections display the tree diagrams of the scripts, and show the dependencies of each script. Note that a <code>.R</code> file indicates a single script, and some features may require more than one script to realize.</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb3-1"><a href="structure.html#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">D:.</span></span>
+<div class="sourceCode" id="cb3"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb3-1"><a href="structure.html#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">Project</span> Folder</span>
 <span id="cb3-2"><a href="structure.html#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="ex">├───analysis</span></span>
 <span id="cb3-3"><a href="structure.html#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="ex">├───create_data</span></span>
-<span id="cb3-4"><a href="structure.html#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="ex">│</span>   └───old</span>
-<span id="cb3-5"><a href="structure.html#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="ex">├───drafts</span></span>
-<span id="cb3-6"><a href="structure.html#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="ex">│</span>   ├───figures</span>
-<span id="cb3-7"><a href="structure.html#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="ex">│</span>   │   ├───old</span>
-<span id="cb3-8"><a href="structure.html#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="ex">│</span>   │   ├───old <span class="at">-</span> delete</span>
-<span id="cb3-9"><a href="structure.html#cb3-9" aria-hidden="true" tabindex="-1"></a><span class="ex">│</span>   │   └───test</span>
-<span id="cb3-10"><a href="structure.html#cb3-10" aria-hidden="true" tabindex="-1"></a><span class="ex">│</span>   └───tables</span>
-<span id="cb3-11"><a href="structure.html#cb3-11" aria-hidden="true" tabindex="-1"></a><span class="ex">│</span>       ├───old</span>
-<span id="cb3-12"><a href="structure.html#cb3-12" aria-hidden="true" tabindex="-1"></a><span class="ex">│</span>       ├───old <span class="at">-</span> delete</span>
-<span id="cb3-13"><a href="structure.html#cb3-13" aria-hidden="true" tabindex="-1"></a><span class="ex">│</span>       └───test</span>
-<span id="cb3-14"><a href="structure.html#cb3-14" aria-hidden="true" tabindex="-1"></a><span class="ex">├───knit_tables</span></span>
-<span id="cb3-15"><a href="structure.html#cb3-15" aria-hidden="true" tabindex="-1"></a><span class="ex">│</span>   └───old</span>
-<span id="cb3-16"><a href="structure.html#cb3-16" aria-hidden="true" tabindex="-1"></a><span class="ex">└───Koijen</span> Yogo</span>
-<span id="cb3-17"><a href="structure.html#cb3-17" aria-hidden="true" tabindex="-1"></a>    <span class="ex">├───Data</span></span>
-<span id="cb3-18"><a href="structure.html#cb3-18" aria-hidden="true" tabindex="-1"></a>    <span class="ex">│</span>   ├───Compustat</span>
-<span id="cb3-19"><a href="structure.html#cb3-19" aria-hidden="true" tabindex="-1"></a>    <span class="ex">│</span>   │   └───2017</span>
-<span id="cb3-20"><a href="structure.html#cb3-20" aria-hidden="true" tabindex="-1"></a>    <span class="ex">│</span>   ├───CRSP</span>
-<span id="cb3-21"><a href="structure.html#cb3-21" aria-hidden="true" tabindex="-1"></a>    <span class="ex">│</span>   │   └───2017</span>
-<span id="cb3-22"><a href="structure.html#cb3-22" aria-hidden="true" tabindex="-1"></a>    <span class="ex">│</span>   ├───Fama French</span>
-<span id="cb3-23"><a href="structure.html#cb3-23" aria-hidden="true" tabindex="-1"></a>    <span class="ex">│</span>   │   ├───Fama-French Factors</span>
-<span id="cb3-24"><a href="structure.html#cb3-24" aria-hidden="true" tabindex="-1"></a>    <span class="ex">│</span>   │   └───Industry Definitions</span>
-<span id="cb3-25"><a href="structure.html#cb3-25" aria-hidden="true" tabindex="-1"></a>    <span class="ex">│</span>   │       └───Stata</span>
-<span id="cb3-26"><a href="structure.html#cb3-26" aria-hidden="true" tabindex="-1"></a>    <span class="ex">│</span>   ├───SEC</span>
-<span id="cb3-27"><a href="structure.html#cb3-27" aria-hidden="true" tabindex="-1"></a>    <span class="ex">│</span>   │   └───Form ADV</span>
-<span id="cb3-28"><a href="structure.html#cb3-28" aria-hidden="true" tabindex="-1"></a>    <span class="ex">│</span>   │       └───Registered</span>
-<span id="cb3-29"><a href="structure.html#cb3-29" aria-hidden="true" tabindex="-1"></a>    <span class="ex">│</span>   │           └───Stata</span>
-<span id="cb3-30"><a href="structure.html#cb3-30" aria-hidden="true" tabindex="-1"></a>    <span class="ex">│</span>   ├───Thomson Reuters</span>
-<span id="cb3-31"><a href="structure.html#cb3-31" aria-hidden="true" tabindex="-1"></a>    <span class="ex">│</span>   │   ├───13F</span>
-<span id="cb3-32"><a href="structure.html#cb3-32" aria-hidden="true" tabindex="-1"></a>    <span class="ex">│</span>   │   │   ├───2016</span>
-<span id="cb3-33"><a href="structure.html#cb3-33" aria-hidden="true" tabindex="-1"></a>    <span class="ex">│</span>   │   │   └───2017</span>
-<span id="cb3-34"><a href="structure.html#cb3-34" aria-hidden="true" tabindex="-1"></a>    <span class="ex">│</span>   │   └───Ownership</span>
-<span id="cb3-35"><a href="structure.html#cb3-35" aria-hidden="true" tabindex="-1"></a>    <span class="ex">│</span>   │       └───2017</span>
-<span id="cb3-36"><a href="structure.html#cb3-36" aria-hidden="true" tabindex="-1"></a>    <span class="ex">│</span>   └───WRDS-SEC</span>
-<span id="cb3-37"><a href="structure.html#cb3-37" aria-hidden="true" tabindex="-1"></a>    <span class="ex">└───Programs</span></span>
-<span id="cb3-38"><a href="structure.html#cb3-38" aria-hidden="true" tabindex="-1"></a>        <span class="ex">├───Data</span></span>
-<span id="cb3-39"><a href="structure.html#cb3-39" aria-hidden="true" tabindex="-1"></a>        <span class="ex">│</span>   ├───Compustat</span>
-<span id="cb3-40"><a href="structure.html#cb3-40" aria-hidden="true" tabindex="-1"></a>        <span class="ex">│</span>   │   └───2017</span>
-<span id="cb3-41"><a href="structure.html#cb3-41" aria-hidden="true" tabindex="-1"></a>        <span class="ex">│</span>   ├───CRSP</span>
-<span id="cb3-42"><a href="structure.html#cb3-42" aria-hidden="true" tabindex="-1"></a>        <span class="ex">│</span>   │   └───2017</span>
-<span id="cb3-43"><a href="structure.html#cb3-43" aria-hidden="true" tabindex="-1"></a>        <span class="ex">│</span>   ├───Fama French</span>
-<span id="cb3-44"><a href="structure.html#cb3-44" aria-hidden="true" tabindex="-1"></a>        <span class="ex">│</span>   │   ├───Fama-French Factors</span>
-<span id="cb3-45"><a href="structure.html#cb3-45" aria-hidden="true" tabindex="-1"></a>        <span class="ex">│</span>   │   └───Industry Definitions</span>
-<span id="cb3-46"><a href="structure.html#cb3-46" aria-hidden="true" tabindex="-1"></a>        <span class="ex">│</span>   │       └───Stata</span>
-<span id="cb3-47"><a href="structure.html#cb3-47" aria-hidden="true" tabindex="-1"></a>        <span class="ex">│</span>   ├───SEC</span>
-<span id="cb3-48"><a href="structure.html#cb3-48" aria-hidden="true" tabindex="-1"></a>        <span class="ex">│</span>   │   └───Form ADV</span>
-<span id="cb3-49"><a href="structure.html#cb3-49" aria-hidden="true" tabindex="-1"></a>        <span class="ex">│</span>   │       └───Registered</span>
-<span id="cb3-50"><a href="structure.html#cb3-50" aria-hidden="true" tabindex="-1"></a>        <span class="ex">│</span>   │           └───Stata</span>
-<span id="cb3-51"><a href="structure.html#cb3-51" aria-hidden="true" tabindex="-1"></a>        <span class="ex">│</span>   ├───Thomson Reuters</span>
-<span id="cb3-52"><a href="structure.html#cb3-52" aria-hidden="true" tabindex="-1"></a>        <span class="ex">│</span>   │   ├───13F</span>
-<span id="cb3-53"><a href="structure.html#cb3-53" aria-hidden="true" tabindex="-1"></a>        <span class="ex">│</span>   │   │   ├───2016</span>
-<span id="cb3-54"><a href="structure.html#cb3-54" aria-hidden="true" tabindex="-1"></a>        <span class="ex">│</span>   │   │   └───2017</span>
-<span id="cb3-55"><a href="structure.html#cb3-55" aria-hidden="true" tabindex="-1"></a>        <span class="ex">│</span>   │   └───Ownership</span>
-<span id="cb3-56"><a href="structure.html#cb3-56" aria-hidden="true" tabindex="-1"></a>        <span class="ex">│</span>   │       └───2017</span>
-<span id="cb3-57"><a href="structure.html#cb3-57" aria-hidden="true" tabindex="-1"></a>        <span class="ex">│</span>   └───WRDS-SEC</span>
-<span id="cb3-58"><a href="structure.html#cb3-58" aria-hidden="true" tabindex="-1"></a>        <span class="ex">├───Matlab</span></span>
-<span id="cb3-59"><a href="structure.html#cb3-59" aria-hidden="true" tabindex="-1"></a>        <span class="ex">└───Stata</span></span>
-<span id="cb3-60"><a href="structure.html#cb3-60" aria-hidden="true" tabindex="-1"></a>            <span class="ex">├───Construction</span></span>
-<span id="cb3-61"><a href="structure.html#cb3-61" aria-hidden="true" tabindex="-1"></a>            <span class="ex">│</span>   └───Modified</span>
-<span id="cb3-62"><a href="structure.html#cb3-62" aria-hidden="true" tabindex="-1"></a>            <span class="ex">├───Data</span></span>
-<span id="cb3-63"><a href="structure.html#cb3-63" aria-hidden="true" tabindex="-1"></a>            <span class="ex">│</span>   ├───2</span>
-<span id="cb3-64"><a href="structure.html#cb3-64" aria-hidden="true" tabindex="-1"></a>            <span class="ex">│</span>   ├───3</span>
-<span id="cb3-65"><a href="structure.html#cb3-65" aria-hidden="true" tabindex="-1"></a>            <span class="ex">│</span>   ├───Bins_csv</span>
-<span id="cb3-66"><a href="structure.html#cb3-66" aria-hidden="true" tabindex="-1"></a>            <span class="ex">│</span>   └───Jin_0925</span>
-<span id="cb3-67"><a href="structure.html#cb3-67" aria-hidden="true" tabindex="-1"></a>            <span class="ex">├───Decomposition</span></span>
-<span id="cb3-68"><a href="structure.html#cb3-68" aria-hidden="true" tabindex="-1"></a>            <span class="ex">├───Estimation</span></span>
-<span id="cb3-69"><a href="structure.html#cb3-69" aria-hidden="true" tabindex="-1"></a>            <span class="ex">├───Institutions</span></span>
-<span id="cb3-70"><a href="structure.html#cb3-70" aria-hidden="true" tabindex="-1"></a>            <span class="ex">├───Liquidity</span></span>
-<span id="cb3-71"><a href="structure.html#cb3-71" aria-hidden="true" tabindex="-1"></a>            <span class="ex">└───Predictability</span></span></code></pre></div>
+<span id="cb3-4"><a href="structure.html#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="ex">├───drafts</span></span>
+<span id="cb3-5"><a href="structure.html#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="ex">│</span>   ├───figures</span>
+<span id="cb3-6"><a href="structure.html#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="ex">│</span>   └───tables</span>
+<span id="cb3-7"><a href="structure.html#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="ex">└───knit_tables</span></span></code></pre></div>
 <div id="data-creation" class="section level2 unnumbered hasAnchor">
 <h2>Data Creation<a href="structure.html#data-creation" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="structure.html#cb4-1" aria-hidden="true" tabindex="-1"></a>fs<span class="sc">::</span><span class="fu">dir_tree</span>(<span class="fu">paste0</span>(project_path, <span class="st">&quot;create_data&quot;</span>), </span>
-<span id="cb4-2"><a href="structure.html#cb4-2" aria-hidden="true" tabindex="-1"></a>             <span class="at">recurse =</span> <span class="cn">TRUE</span>, </span>
-<span id="cb4-3"><a href="structure.html#cb4-3" aria-hidden="true" tabindex="-1"></a>             <span class="co"># regexp = &quot;*.r&quot;</span></span>
-<span id="cb4-4"><a href="structure.html#cb4-4" aria-hidden="true" tabindex="-1"></a>             )</span></code></pre></div>
-<pre><code>## ./../../code/create_data
-## +-- create_beta.R
-## +-- create_compustat.R
-## +-- create_final_stocks.R
-## +-- create_holdings.R
-## +-- create_stocks_monthly.R
-## +-- index_membership.R
-## +-- old
-## |   \-- OLDJINCODE.R
-## \-- pull_wrds_data.R</code></pre>
 </div>
 <div id="analysis" class="section level2 unnumbered hasAnchor">
 <h2>Analysis<a href="structure.html#analysis" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="structure.html#cb6-1" aria-hidden="true" tabindex="-1"></a>fs<span class="sc">::</span><span class="fu">dir_tree</span>(<span class="fu">paste0</span>(project_path, <span class="st">&quot;analysis&quot;</span>), </span>
-<span id="cb6-2"><a href="structure.html#cb6-2" aria-hidden="true" tabindex="-1"></a>             <span class="at">recurse =</span> <span class="cn">TRUE</span>, </span>
-<span id="cb6-3"><a href="structure.html#cb6-3" aria-hidden="true" tabindex="-1"></a>             <span class="co"># regexp = &quot;*.r&quot;</span></span>
-<span id="cb6-4"><a href="structure.html#cb6-4" aria-hidden="true" tabindex="-1"></a>             )</span></code></pre></div>
-<pre><code>## ./../../code/analysis
-## +-- adjust_coeff.R
-## +-- adjust_coeff_elasticity.R
-## +-- adjust_coeff_set_average.R
-## +-- bins.R
-## +-- counterfactual_analysis_active.R
-## +-- counterfactual_analysis_investor.R
-## +-- counterfactual_cleaning_active.R
-## +-- counterfactual_cleaning_coeff.R
-## +-- counterfactual_cleaning_coeff_elasticity.R
-## +-- counterfactual_cleaning_coeff_set_average.R
-## +-- counterfactual_cleaning_investor.R
-## +-- counterfactual_funcs.R
-## +-- data0.R
-## +-- data1.R
-## +-- elasticities.R
-## +-- estimate.R
-## +-- gmm_estimation.R
-## \-- readme.md</code></pre>
 <p>TBA</p>
 </div>
 <div id="knitting" class="section level2 unnumbered hasAnchor">
 <h2>Knitting<a href="structure.html#knitting" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="structure.html#cb8-1" aria-hidden="true" tabindex="-1"></a>fs<span class="sc">::</span><span class="fu">dir_tree</span>(<span class="fu">paste0</span>(project_path, <span class="st">&quot;knit_tables&quot;</span>), </span>
-<span id="cb8-2"><a href="structure.html#cb8-2" aria-hidden="true" tabindex="-1"></a>             <span class="at">recurse =</span> <span class="cn">TRUE</span>, </span>
-<span id="cb8-3"><a href="structure.html#cb8-3" aria-hidden="true" tabindex="-1"></a>             <span class="co"># regexp = &quot;*.r&quot;</span></span>
-<span id="cb8-4"><a href="structure.html#cb8-4" aria-hidden="true" tabindex="-1"></a>             )</span></code></pre></div>
-<pre><code>## ./../../code/knit_tables
-## +-- fig_elast_hist.Rnw
-## +-- fig_gmm_coef_hist.Rnw
-## +-- fig_mkt_chg_coeff.Rnw
-## +-- fig_ols_coef_hist.Rnw
-## +-- fig_quintile.Rnw
-## +-- get_labels.R
-## +-- get_label_values.R
-## +-- get_stats.R
-## +-- index_regress.Rnw
-## +-- knit_tables.R
-## +-- old
-## |   +-- get_label_values.R
-## |   +-- knit_tables.R
-## |   +-- knit_tables_test_Jin_old.R
-## |   +-- tab_epower_test.Rnw
-## |   +-- tab_value_regs.Rnw
-## |   \-- tab_value_regs_diff.Rnw
-## +-- readme.md
-## +-- tab_active.Rnw
-## +-- tab_counter_stats.Rnw
-## +-- tab_elast_mats.Rnw
-## +-- tab_elast_sum.Rnw
-## +-- tab_est_set.Rnw
-## +-- tab_est_set_elasticity.Rnw
-## +-- tab_est_set_extended.Rnw
-## +-- tab_est_set_ols.Rnw
-## +-- tab_est_set_panels.Rnw
-## +-- tab_profit_by4tile.Rnw
-## +-- tab_profit_by4tile_extended.Rnw
-## +-- tab_quintile.Rnw
-## +-- tab_regs.Rnw
-## +-- tab_regs_elasticity.Rnw
-## +-- tab_regs_elasticity_activeweight.Rnw
-## +-- tab_regs_elasticity_types.Rnw
-## +-- tab_regs_extended.Rnw
-## +-- tab_regs_without_hh.Rnw
-## +-- tab_sumstats.Rnw
-## +-- tab_value_regs.Rnw
-## +-- tab_value_regs_active.Rnw
-## +-- tab_value_regs_coeff.Rnw
-## +-- tab_value_regs_coeff_shift.Rnw
-## +-- tab_value_regs_diff.Rnw
-## +-- tab_value_regs_set_average.Rnw
-## \-- tab_value_test.Rnw</code></pre>
 <p>TBA</p>
 
 </div>

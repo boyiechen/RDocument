@@ -17,105 +17,43 @@ The following sections display the tree diagrams of the scripts, and show the de
 
 
 ```{bash, eval=FALSE}
-D:.
+Project Folder
 ├───analysis
 ├───create_data
-│   └───old
 ├───drafts
 │   ├───figures
-│   │   ├───old
-│   │   ├───old - delete
-│   │   └───test
 │   └───tables
-│       ├───old
-│       ├───old - delete
-│       └───test
-├───knit_tables
-│   └───old
-└───Koijen Yogo
-    ├───Data
-    │   ├───Compustat
-    │   │   └───2017
-    │   ├───CRSP
-    │   │   └───2017
-    │   ├───Fama French
-    │   │   ├───Fama-French Factors
-    │   │   └───Industry Definitions
-    │   │       └───Stata
-    │   ├───SEC
-    │   │   └───Form ADV
-    │   │       └───Registered
-    │   │           └───Stata
-    │   ├───Thomson Reuters
-    │   │   ├───13F
-    │   │   │   ├───2016
-    │   │   │   └───2017
-    │   │   └───Ownership
-    │   │       └───2017
-    │   └───WRDS-SEC
-    └───Programs
-        ├───Data
-        │   ├───Compustat
-        │   │   └───2017
-        │   ├───CRSP
-        │   │   └───2017
-        │   ├───Fama French
-        │   │   ├───Fama-French Factors
-        │   │   └───Industry Definitions
-        │   │       └───Stata
-        │   ├───SEC
-        │   │   └───Form ADV
-        │   │       └───Registered
-        │   │           └───Stata
-        │   ├───Thomson Reuters
-        │   │   ├───13F
-        │   │   │   ├───2016
-        │   │   │   └───2017
-        │   │   └───Ownership
-        │   │       └───2017
-        │   └───WRDS-SEC
-        ├───Matlab
-        └───Stata
-            ├───Construction
-            │   └───Modified
-            ├───Data
-            │   ├───2
-            │   ├───3
-            │   ├───Bins_csv
-            │   └───Jin_0925
-            ├───Decomposition
-            ├───Estimation
-            ├───Institutions
-            ├───Liquidity
-            └───Predictability
-
+└───knit_tables
 ```
 
 
 
 ## Data Creation {-}
 
-```{r}
+```{r, include = FALSE}
 fs::dir_tree(paste0(project_path, "create_data"), 
              recurse = TRUE, 
-             # regexp = "*.r"
+             regexp = "old",
+             invert = TRUE
              )
 ```
 
 ## Analysis {-}
-```{r}
+```{r, include=FALSE}
 fs::dir_tree(paste0(project_path, "analysis"), 
              recurse = TRUE, 
-             # regexp = "*.r"
+             regexp = "old",
+             invert = TRUE
              )
 ```
 TBA
 
 ## Knitting {-}
-```{r}
+```{r, include=FALSE}
 fs::dir_tree(paste0(project_path, "knit_tables"), 
              recurse = TRUE, 
-             # regexp = "*.r"
+             regexp = "old",
+             invert = TRUE
              )
 ```
 TBA

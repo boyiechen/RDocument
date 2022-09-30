@@ -1,5 +1,4 @@
-eq:binom
-thm:tri
+set-up-on-the-server
 structure
 creation
 something-here
@@ -7,18 +6,7 @@ cool-stuff
 analysis-1
 merge-data
 estimations
-footnotes-and-citations
-footnotes
-citations
-blocks
-equations
-theorems-and-proofs
-callout-blocks
-sharing-your-book
-publishing
-pages
-metadata-for-sharing
-url-your-book-url-like-httpsbookdown.orgyihuibookdown
 knitting-1
 figures
 tables
+url-your-book-url-like-httpsbookdown.orgyihuibookdown
