@@ -19,3 +19,6 @@ publishing
 pages
 metadata-for-sharing
 url-your-book-url-like-httpsbookdown.orgyihuibookdown
+knitting-1
+figures
+tables
