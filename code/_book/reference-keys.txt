@@ -9,4 +9,3 @@ estimations
 knitting-1
 figures
 tables
-url-your-book-url-like-httpsbookdown.orgyihuibookdown
